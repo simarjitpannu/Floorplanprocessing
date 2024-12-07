@@ -2,50 +2,77 @@
 
 ## Overview
 
-This project is a comprehensive web application for managing buildings and their associated floors, integrating spatial data, computer vision, cloud storage, and modern frontend technologies. It leverages AI libraries, MongoDB, Cloudinary, and the Nominatim API for seamless data handling and visualization, demonstrating practical applications of Big Data concepts.
+This project is a comprehensive web application for managing buildings and their associated floors, integrating spatial data, computer vision, cloud storage and modern frontend technologies. It leverages AI libraries, MongoDB, Cloudinary, and the Nominatim API for seamless data handling and visualization, demonstrating practical applications of Big Data concepts.
 
 ## Features
 
+The frontend of the application is developed using React.js and styled with Tailwind CSS, offering a clean and responsive user interface. Below are the key features of the frontend, explained in sequence, corresponding to the 10 provided images:
+
+1.  **Buildings Overview Page:** Displays all the buildings stored in the system with options to view, edit, or delete each building.
+    
+2.  **Adding a New Building:** Provides a user-friendly form to add a new building with a name and address.
+    
+3.  **Building Details and Floor Management:** Shows detailed information about a selected building, including a list of its associated floors.
+    
+4.  **Adding a New Floor:** Enables users to add a new floor to a building by entering its name and floor number.
+    
+5.  **Floor Details with Map Integration:** Displays floor-specific details along with a Mapbox-based visualization for spatial mapping.
+    
+6.  **Uploading Floor Plans:** Allows users to upload floor plan images. The uploaded images are processed and securely stored in Cloudinary.
+    
+7.  **View Floor Plans and GeoJSON Options:** Offers a side-by-side display of the original floor plan, cropped floor plan, and a GeoJSON-based coordinate map.
+    
+8.  **Copy or Download GeoJSON Data:** Enables users to copy the GeoJSON data to the clipboard or download it as a zip file for external use.
+    
+9.  **Editing Coordinates and Floor Data:** Provides interactive tools to edit floor coordinates and align the spatial data on the map.
+    
+10.  **Finalized Floor and Building Overview with Data Visualization:** Summarizes the building and floor data with comprehensive visualizations and exportable GeoJSON files.
+    
+
+This workflow ensures a seamless and interactive user experience, fully integrating the frontend with the backend functionality.
+
+## Key Functional Areas
+
 **Building and Floor Management:**
 
-*   CRUD operations for buildings and floors with real-time data rendering.
+*   Perform CRUD operations for buildings and floors with real-time data updates.
     
-*   Upload and manage floor plans and associated geographical data.
+*   Upload and manage floor plans alongside their geographical metadata.
     
 
 **AI and Computer Vision Integration:**
 
-*   Extract metadata and features from uploaded images using AI libraries like OpenCV and TensorFlow.
+*   Extract metadata and features from uploaded floor plan images using AI libraries such as OpenCV and TensorFlow.
     
-*   Automate GeoJSON generation for floor mapping.
+*   Automate the generation of GeoJSON files for floor mapping.
     
 
 **Geocoding with Nominatim API:**
 
-*   Automatically fetch the bounding box coordinates of a building address.
+*   Automatically retrieve bounding box coordinates for a building’s address.
     
-*   Enhance location data accuracy for mapping purposes.
+*   Enhance the accuracy of location-based visualizations.
     
 
 **Cloud Storage:**
 
-*   Cloudinary for secure and scalable storage of images and files.
+*   Use Cloudinary for secure, scalable image storage and transformations.
     
 
 **Big Data System Concepts:**
 
-*   MongoDB for document-based data storage.
+*   Leverage MongoDB for efficient and scalable document-based data storage.
     
-*   GeoJSON for spatial data management.
+*   Utilize GeoJSON for structured spatial data management.
     
-*   APIs for efficient data processing and visualization.
+*   Implement APIs to support robust and efficient data processing workflows.
     
 
 **Interactive Maps:**
 
-*   Mapbox for visualizing building and floor spatial data.
+*   Integrate Mapbox to visualize building and floor spatial data dynamically.
     
-*   Update and download spatial data in GeoJSON format.
+*   Provide options to update, edit, and download GeoJSON data directly from the map interface.
     
 
 ## Technical Stack
@@ -150,8 +177,33 @@ This project is a comprehensive web application for managing buildings and their
 *   Dynamic Routing: React Router enables seamless navigation between buildings and floors.
     
 *   Interactive Maps: Mapbox visualizes spatial data and integrates with GeoJSON files.
+  
     
+ ## Images and Application Flow
 
+I have included a folder in the GitHub repository with 10 numbered images demonstrating the application's functionality. These images represent the order in which the app is used:
+
+*   Image 1: Buildings Overview Page
+    
+*   Image 2: Adding a New Building
+    
+*   Image 3: New Added Building Shown on Page
+    
+*   Image 4: New Building Added Page
+    
+*   Image 5: Added New Floor to the Building
+    
+*   Image 6: Upload Floor Plan of the Floor
+    
+*   Image 7: GeoJSON Visualization of Floor Plan on Map
+    
+*   Image 8: Can See Cropped Floor Plan (Processing Done at the Backend)
+    
+*   Image 9: Processed Floor Plan Image Used to Get the GeoJSON Data
+    
+*   Image 10: Can Adjust Coordinates to Fit the Floor Plan at the Right Place
+
+  
 ## Setup Instructions
 
 **Backend**
@@ -213,12 +265,5 @@ This project is a comprehensive web application for managing buildings and their
 *   **Spatial Data:** GeoJSON and Nominatim API enhance geospatial querying and visualization.
     
 *   **Data Processing Pipelines:** AI-based image processing simulates Big Data pipelines for automated analysis.
-    
 
-## Future Enhancements
 
-*   **Advanced Analytics:** Add dashboards for building and floor usage analytics.
-    
-*   **3D Mapping:** Introduce 3D floor and building visualizations using Mapbox.
-    
-*   **User Management:** Role-based access control for secure collaboration.
