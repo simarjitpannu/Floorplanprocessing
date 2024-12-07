@@ -4,6 +4,43 @@
 
 This project is a comprehensive web application for managing buildings and their associated floors, integrating spatial data, computer vision, cloud storage and modern frontend technologies. It leverages AI libraries, MongoDB, Cloudinary, and the Nominatim API for seamless data handling and visualization, demonstrating practical applications of Big Data concepts.
 
+## Technical Stack
+
+**Backend**
+
+*   Framework: FastAPI
+    
+*   Database: MongoDB
+    
+*   Storage: Cloudinary
+    
+*   Geocoding: Nominatim API for address-to-coordinate conversion.
+    
+
+**Frontend**
+
+*   Framework: React.js
+    
+*   Styling: Tailwind CSS
+    
+
+**APIs**
+
+*   **Custom APIs:**
+    
+    *   CRUD operations for buildings and floors.
+        
+    *   Image processing and GeoJSON generation.
+        
+*   **Third-party APIs:**
+    
+    *   Cloudinary: For image handling.
+        
+    *   Mapbox: For spatial data visualization.
+        
+    *   Nominatim: For geocoding.
+    
+
 ## Features
 
 The frontend of the application is developed using React.js and styled with Tailwind CSS, offering a clean and responsive user interface. Below are the key features of the frontend, explained in sequence, corresponding to the 10 provided images:
@@ -74,43 +111,6 @@ This workflow ensures a seamless and interactive user experience, fully integrat
     
 *   Provide options to update, edit, and download GeoJSON data directly from the map interface.
     
-
-## Technical Stack
-
-**Backend**
-
-*   Framework: FastAPI
-    
-*   Database: MongoDB
-    
-*   Storage: Cloudinary
-    
-*   Geocoding: Nominatim API for address-to-coordinate conversion.
-    
-
-**Frontend**
-
-*   Framework: React.js
-    
-*   Styling: Tailwind CSS
-    
-
-**APIs**
-
-*   **Custom APIs:**
-    
-    *   CRUD operations for buildings and floors.
-        
-    *   Image processing and GeoJSON generation.
-        
-*   **Third-party APIs:**
-    
-    *   Cloudinary: For image handling.
-        
-    *   Mapbox: For spatial data visualization.
-        
-    *   Nominatim: For geocoding.
-        
 
 ## Key Backend Features
 
